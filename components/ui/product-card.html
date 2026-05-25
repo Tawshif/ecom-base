@@ -1,0 +1,33 @@
+<div class="product-card">
+  <div class="product-card__media">
+    <a href="/pages/product/detail.html" style="display: block; position: absolute; inset: 0; z-index: 1;">
+      {{#if image}}
+        <img src="{{image}}" alt="{{title}}" loading="lazy">
+      {{else}}
+        <div class="product-card__placeholder">{{icon}}</div>
+      {{/if}}
+    </a>
+    
+    {{#if badge}}
+      <div class="product-card__badge badge--{{badgeType}}">{{badge}}</div>
+    {{/if}}
+    
+    <button class="product-card__wishlist" aria-label="Add to wishlist">🤍</button>
+  </div>
+  <div class="product-card__body">
+    <a href="/pages/product/detail.html" class="product-card__title" style="display: block;">{{title}}</a>
+    <div class="product-card__rating"><span class="stars">★★★★★</span><span class="rating-count">({{ratingCount}})</span></div>
+    <div class="product-card__price-row">
+      <div class="product-card__price">
+        {{#if priceSale}}
+          <span class="price-sale">${{priceSale}}</span>
+          <span class="price-original">${{priceOriginal}}</span>
+        {{else}}
+          <span class="price-main">${{price}}</span>
+        {{/if}}
+      </div>
+      <button class="product-card__add-btn" onclick="toast('Added to cart!','success')">Add to Cart</button>
+    </div>
+  </div>
+</div>
+

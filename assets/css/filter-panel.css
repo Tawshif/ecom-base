@@ -1,0 +1,202 @@
+/* ============================================================
+   FILTER PANEL (PLP)
+   ============================================================ */
+
+.plp-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: var(--sp-7);
+}
+
+.filter-panel {
+    background: var(--color-surface);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--r-lg);
+    padding: var(--sp-5);
+    height: fit-content;
+    position: sticky;
+    top: calc(var(--header-h) + var(--sp-4));
+}
+
+.filter-panel__title {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: var(--sp-5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-panel__clear {
+    font-size: 0.8rem;
+    color: var(--brand-accent);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.filter-group {
+    border-top: 1px solid var(--color-border);
+    padding: var(--sp-4) 0;
+}
+
+.filter-group__label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--sp-3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.filter-option {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    padding: var(--sp-1) 0;
+    cursor: pointer;
+}
+
+.filter-option input {
+    accent-color: var(--brand-primary);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.filter-option label {
+    font-size: 0.85rem;
+    color: var(--color-text-2);
+    cursor: pointer;
+    flex: 1;
+}
+
+.filter-option .count {
+    font-size: 0.75rem;
+    color: var(--color-text-3);
+    font-family: var(--font-mono);
+}
+
+.color-swatch {
+    width: 20px;
+    height: 20px;
+    border-radius: var(--r-pill);
+    border: 2px solid var(--color-border);
+    cursor: pointer;
+    transition: transform var(--ease-fast);
+}
+
+.color-swatch:hover,
+.color-swatch.active {
+    transform: scale(1.2);
+    border-color: var(--brand-primary);
+}
+
+.price-range {
+    display: flex;
+    gap: var(--sp-2);
+    margin-top: var(--sp-3);
+}
+
+.price-range input {
+    width: 100%;
+    height: 36px;
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--r-md);
+    padding: 0 var(--sp-3);
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+    outline: none;
+}
+
+.price-range input:focus {
+    border-color: var(--brand-primary);
+}
+
+/* Active Filters */
+.active-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-4);
+}
+
+.active-filter-pill {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    background: var(--brand-primary);
+    color: #fff;
+    padding: var(--sp-1) var(--sp-3);
+    border-radius: var(--r-pill);
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+.active-filter-pill button {
+    background: none;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1;
+    padding: 0 0 0 var(--sp-1);
+}
+
+/* ============================================================
+   PLP TOOLBAR
+   ============================================================ */
+
+.plp-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: var(--sp-4);
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: var(--sp-5);
+}
+
+.plp-count {
+    font-size: 0.9rem;
+    color: var(--color-text-2);
+}
+
+.plp-sort {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+}
+
+.sort-select {
+    height: 36px;
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--r-md);
+    padding: 0 var(--sp-4) 0 var(--sp-3);
+    font-size: 0.85rem;
+    font-family: var(--font-body);
+    background: var(--color-surface);
+    cursor: pointer;
+    outline: none;
+}
+
+.view-toggles {
+    display: flex;
+    gap: var(--sp-1);
+}
+
+.view-btn {
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--r-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: var(--color-text-3);
+    transition: border-color var(--ease-fast), color var(--ease-fast);
+}
+
+.view-btn.active {
+    border-color: var(--brand-primary);
+    color: var(--brand-primary);
+}

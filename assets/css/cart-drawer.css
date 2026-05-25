@@ -1,0 +1,207 @@
+/* ============================================================
+   CART DRAWER
+   ============================================================ */
+
+.cart-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--ease);
+}
+
+.cart-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.cart-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 420px;
+    background: var(--color-surface);
+    box-shadow: var(--shadow-xl);
+    z-index: 2001;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform var(--ease-slow);
+}
+
+.cart-drawer.open {
+    transform: translateX(0);
+}
+
+.cart-drawer__header {
+    padding: var(--sp-5) var(--sp-5) var(--sp-4);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-drawer__title {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.cart-drawer__close {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--r-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: background var(--ease-fast);
+}
+
+.cart-drawer__close:hover {
+    background: var(--color-surface-2);
+}
+
+.cart-drawer__items {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--sp-4) var(--sp-5);
+}
+
+.cart-item {
+    display: flex;
+    gap: var(--sp-4);
+    padding: var(--sp-4) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.cart-item__image {
+    width: 80px;
+    height: 96px;
+    border-radius: var(--r-md);
+    background: var(--color-surface-2);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--color-text-3);
+}
+
+.cart-item__details {
+    flex: 1;
+}
+
+.cart-item__title {
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.cart-item__variant {
+    font-size: 0.78rem;
+    color: var(--color-text-3);
+    margin-top: 3px;
+}
+
+.cart-item__price {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-top: var(--sp-3);
+}
+
+.cart-item__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--sp-3);
+}
+
+.cart-item__remove {
+    font-size: 0.75rem;
+    color: var(--color-error);
+    cursor: pointer;
+}
+
+.cart-drawer__footer {
+    padding: var(--sp-4) var(--sp-5);
+    border-top: 1px solid var(--color-border);
+    background: var(--color-surface);
+}
+
+.cart-promo {
+    display: flex;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-4);
+}
+
+.cart-promo input {
+    flex: 1;
+    height: 40px;
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--r-md);
+    padding: 0 var(--sp-3);
+    font-size: 0.85rem;
+    font-family: var(--font-body);
+    outline: none;
+}
+
+.cart-promo input:focus {
+    border-color: var(--brand-primary);
+}
+
+.cart-total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--sp-3);
+}
+
+.cart-total-label {
+    font-size: 0.88rem;
+    color: var(--color-text-2);
+}
+
+.cart-total-value {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.cart-note {
+    font-size: 0.75rem;
+    color: var(--color-text-3);
+    text-align: center;
+    margin-top: var(--sp-3);
+}
+
+.free-shipping-bar {
+    margin-bottom: var(--sp-4);
+}
+
+.free-shipping-text {
+    font-size: 0.78rem;
+    margin-bottom: var(--sp-2);
+    color: var(--color-text-2);
+}
+
+.free-shipping-text strong {
+    color: var(--color-success);
+}
+
+.progress-bar {
+    height: 4px;
+    background: var(--color-border);
+    border-radius: var(--r-pill);
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--color-success);
+    border-radius: var(--r-pill);
+    transition: width var(--ease);
+}

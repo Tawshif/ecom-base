@@ -1,0 +1,24 @@
+<!--
+  CHECKOUT LAYOUT
+  Extends: layouts/base.html
+  Used by: pages/checkout/checkout.html, pages/checkout/confirmation.html
+  Structure: Minimal Header (logo + security badge only) + [Checkout Content] + Minimal Footer
+
+  Design Rules (per IA strategy):
+    - Remove main navigation to eliminate distractions
+    - Show only logo + security badge in header
+    - Minimal footer (legal links + payment icons only)
+    - No promo bar, no mega menu, no cart icon
+    - Progress indicator (Step 1 of 2) visible at top
+    - Order summary sticky on desktop right column
+
+  #site-header should contain:
+    - Simplified header: Logo + "Secure Checkout 🔒" badge only
+    - components/checkout/step-indicator.html
+
+  #main-content should contain:
+    - Checkout page content (2-column: form + order summary)
+
+  #site-footer should contain:
+    - Minimal footer: legal links + payment icons row
+-->

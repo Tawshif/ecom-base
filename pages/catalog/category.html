@@ -1,0 +1,95 @@
+{{#> base title="Women's Dresses" }}
+<section class="section">
+  <div class="container">
+    <div class="section-label">PAGE · product-listing-page (PLP)</div>
+    <div class="breadcrumb"><a href="/">Home</a><span>/</span><a href="#">Women</a><span>/</span><span class="breadcrumb__current">Dresses</span></div>
+    <h1 class="section-title" style="margin-bottom:var(--sp-2)">Dresses</h1>
+    <p class="section-subtitle" style="margin-bottom:var(--sp-6)">1,204 products</p>
+
+    <div class="plp-layout">
+      <!-- Filter Panel -->
+      <aside class="filter-panel">
+        <div class="filter-panel__title">Filters <button class="filter-panel__clear">Clear all</button></div>
+        <div class="active-filters">
+          <div class="active-filter-pill">Women <button>×</button></div>
+          <div class="active-filter-pill">$50–$150 <button>×</button></div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group__label">Price Range <span>▾</span></div>
+          <div class="price-range"><input type="text" placeholder="$0"><input type="text" placeholder="$500"></div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group__label">Size <span>▾</span></div>
+          <div class="size-options">
+            <button class="size-btn active">XS</button>
+            <button class="size-btn">S</button>
+            <button class="size-btn">M</button>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group__label">Color <span>▾</span></div>
+          <div class="color-options" style="margin-top:var(--sp-2)">
+            <div class="color-option active" style="background:#F0EDE6" title="Cream"></div>
+            <div class="color-option" style="background:#0D1B2A" title="Navy"></div>
+            <div class="color-option" style="background:#FF6B35" title="Terracotta"></div>
+            <div class="color-option" style="background:#22C55E" title="Sage"></div>
+            <div class="color-option" style="background:#E2C9C9" title="Blush"></div>
+          </div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group__label">Brand <span>▾</span></div>
+          <div class="filter-option"><input type="checkbox" id="b1" checked><label for="b1">Arco Studio</label><span class="count">42</span></div>
+          <div class="filter-option"><input type="checkbox" id="b2"><label for="b2">Nomad Co.</label><span class="count">28</span></div>
+          <div class="filter-option"><input type="checkbox" id="b3"><label for="b3">Thread & Story</label><span class="count">19</span></div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group__label">Customer Rating <span>▾</span></div>
+          <div class="filter-option"><input type="checkbox" id="r4"><label for="r4">⭐⭐⭐⭐⭐ (5 stars)</label></div>
+          <div class="filter-option"><input type="checkbox" id="r3"><label for="r3">⭐⭐⭐⭐+ (4+)</label></div>
+          <div class="filter-option"><input type="checkbox" id="r2"><label for="r2">⭐⭐⭐+ (3+)</label></div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group__label">Availability <span>▾</span></div>
+          <div class="filter-option"><input type="checkbox" id="a1"><label for="a1">In Stock</label></div>
+          <div class="filter-option"><input type="checkbox" id="a2"><label for="a2">On Sale</label></div>
+          <div class="filter-option"><input type="checkbox" id="a3"><label for="a3">New Arrivals</label></div>
+        </div>
+        <button class="btn btn--primary btn--full" style="margin-top:var(--sp-4)">Apply Filters</button>
+      </aside>
+
+      <!-- Product Grid -->
+      <div>
+        <div class="plp-toolbar">
+          <span class="plp-count">Showing <strong>48</strong> of 1,204 results</span>
+          <div class="plp-sort">
+            <select class="sort-select">
+              <option>Sort: Relevance</option>
+              <option>Newest First</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Best Rated</option>
+              <option>Bestselling</option>
+            </select>
+            <div class="view-toggles">
+              <button class="view-btn active">⊞</button>
+              <button class="view-btn">☰</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-grid">
+          {{> ui/product-card icon="👗" badge="Sale" badgeType="sale" brand="Arco Studio" title="Linen Midi Wrap Dress" ratingCount="88" priceSale="79" priceOriginal="120" }}
+          {{> ui/product-card icon="👗" badge="New" badgeType="new" brand="Thread & Story" title="Floral Chiffon Slip Dress" ratingCount="41" price="110" }}
+          {{> ui/product-card icon="👗" brand="Nomad Co." title="Knit Sweater Dress — Oat" ratingCount="201" priceSale="89" priceOriginal="145" }}
+          {{> ui/product-card icon="👗" badge="Sold Out" badgeType="sold-out" brand="Arco Studio" title="Silk Bias-Cut Maxi Dress" ratingCount="67" price="195" }}
+        </div>
+        <!-- Load More -->
+        <div class="flex-center" style="margin-top:var(--sp-8)">
+          <button class="btn btn--outline btn--lg">Load More (1,156 remaining)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{/base}}

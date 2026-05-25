@@ -1,0 +1,20 @@
+{
+  "header": [
+    { "label": "New Arrivals", "href": "/pages/catalog/category.html?cat=new", "highlight": true },
+    { "label": "Women", "href": "/pages/catalog/category.html?cat=women", "megaMenu": true },
+    { "label": "Men", "href": "/pages/catalog/category.html?cat=men", "megaMenu": true },
+    { "label": "Home", "href": "/pages/catalog/category.html?cat=home" },
+    { "label": "Sale", "href": "/pages/catalog/category.html?cat=sale", "badge": "HOT" }
+  ],
+  "footer": {
+    "shop": ["New Arrivals", "Women", "Men", "Footwear", "Accessories", "Sale"],
+    "help": ["FAQ", "Track My Order", "Returns & Exchanges", "Shipping Info", "Contact Us", "Size Guide"],
+    "company": ["About Us", "Sustainability", "Careers", "Press", "Affiliate Program", "Blog"]
+  },
+  "mobileBottom": [
+    { "label": "Home", "icon": "🏠", "href": "/" },
+    { "label": "Explore", "icon": "🔍", "href": "/pages/catalog/category.html" },
+    { "label": "Wishlist", "icon": "🤍", "href": "/pages/account/wishlist.html" },
+    { "label": "Account", "icon": "👤", "href": "/pages/account/dashboard.html" }
+  ]
+}

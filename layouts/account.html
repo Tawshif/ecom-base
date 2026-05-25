@@ -1,0 +1,27 @@
+<!--
+  ACCOUNT LAYOUT
+  Extends: layouts/base.html
+  Used by: All pages/account/*.html pages
+  Structure: Header + [Sidebar Nav | Content Area] + Footer
+
+  Design Rules:
+    - Full header with navigation (user is logged in)
+    - 2-column layout: sidebar (260px) + content (1fr)
+    - Sidebar: components/account/sidebar-nav.html
+    - Sidebar sticky on desktop, collapsible on mobile
+    - Active nav item highlighted
+    - Breadcrumb: Home > Account > [Section]
+    - Mobile: sidebar becomes top tabs or hamburger drawer
+
+  #site-header should contain:
+    - components/global/header.html (with user logged-in state)
+
+  #main-content should contain:
+    - Breadcrumb
+    - 2-column grid:
+      - Left: components/account/sidebar-nav.html
+      - Right: Page-specific account content
+
+  #site-footer should contain:
+    - components/global/footer.html
+-->

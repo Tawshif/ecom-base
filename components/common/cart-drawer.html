@@ -1,0 +1,52 @@
+<!-- ============================================================
+     CART DRAWER
+     ============================================================ -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-drawer__header">
+    <div class="cart-drawer__title">Your Cart (3)</div>
+    <button class="cart-drawer__close" onclick="toggleCart()">✕</button>
+  </div>
+  <div class="cart-drawer__items">
+    <div class="free-shipping-bar">
+      <div class="free-shipping-text">Add <strong>$12 more</strong> for free shipping!</div>
+      <div class="progress-bar"><div class="progress-fill" style="width:76%"></div></div>
+    </div>
+    <div class="cart-item">
+      <div class="cart-item__image">👗</div>
+      <div class="cart-item__details">
+        <div class="cart-item__title">Linen Midi Wrap Dress</div>
+        <div class="cart-item__variant">Natural White · M</div>
+        <div class="cart-item__price">$79.00</div>
+        <div class="cart-item__actions">
+          <div class="qty-selector" style="transform:scale(.85);transform-origin:left"><button class="qty-btn">−</button><div class="qty-display">1</div><button class="qty-btn">+</button></div>
+          <button class="cart-item__remove">Remove</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-item">
+      <div class="cart-item__image">👟</div>
+      <div class="cart-item__details">
+        <div class="cart-item__title">Cloud Walk Sneaker</div>
+        <div class="cart-item__variant">Chalk White · Size 38</div>
+        <div class="cart-item__price">$135.00</div>
+        <div class="cart-item__actions">
+          <div class="qty-selector" style="transform:scale(.85);transform-origin:left"><button class="qty-btn">−</button><div class="qty-display">2</div><button class="qty-btn">+</button></div>
+          <button class="cart-item__remove">Remove</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cart-drawer__footer">
+    <div class="cart-promo">
+      <input type="text" placeholder="Enter promo code">
+      <button class="btn btn--outline btn--sm">Apply</button>
+    </div>
+    <div class="cart-total-row">
+      <span class="cart-total-label">Subtotal (excl. shipping + tax)</span>
+      <span class="cart-total-value">$349.00</span>
+    </div>
+    <button class="btn btn--primary btn--full btn--lg" onclick="showSection('checkout'); toggleCart(); toast('Proceeding to checkout...','info')">Checkout →</button>
+    <div class="cart-note">🔒 Secure checkout · 30-day free returns</div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+[
+  { "id": "rev_01", "productId": "prod_001", "author": "Sarah M.", "verified": true, "rating": 5, "title": "Perfect summer dress", "body": "The linen quality is excellent and the wrap style is very flattering. Runs true to size.", "date": "2025-11-28", "helpful": 12 },
+  { "id": "rev_02", "productId": "prod_001", "author": "Emma K.", "verified": true, "rating": 5, "title": "Exactly as described", "body": "Love this dress. The natural white color is clean and elegant. Shipping was super fast.", "date": "2025-12-03", "helpful": 7 },
+  { "id": "rev_03", "productId": "prod_001", "author": "Priya S.", "verified": true, "rating": 4, "title": "Beautiful but wrinkles easily", "body": "The dress is gorgeous and the linen is authentic. Wrinkles quickly but that's linen nature.", "date": "2025-12-08", "helpful": 5 }
+]

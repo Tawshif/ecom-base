@@ -1,0 +1,137 @@
+{{#> base title="Checkout" }}
+<section class="section"><div class="container">
+  <div class="section-label">PAGE · checkout</div>
+  <h1 class="section-title" style="margin-bottom:var(--sp-6)">Checkout</h1>
+
+  <div class="checkout-layout">
+    <div>
+      <!-- Express Checkout -->
+      <div class="express-checkout">
+        <div class="express-checkout__label">Express Checkout</div>
+        <div class="express-btns">
+          <button class="express-btn express-btn--apple">🍎 Apple Pay</button>
+          <button class="express-btn">G Google Pay</button>
+          <button class="express-btn">PayPal</button>
+        </div>
+      </div>
+      <div style="text-align:center;font-size:.82rem;color:var(--color-text-3);margin:var(--sp-4) 0;">— or pay with card —</div>
+
+      <!-- Contact -->
+      <div class="checkout-step">
+        <div class="checkout-step__header">
+          <div class="step-num">1</div>
+          <div class="checkout-step__title">Contact & Delivery</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email address</label>
+          <input type="email" class="form-input" placeholder="you@example.com">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">First name</label>
+            <input type="text" class="form-input" placeholder="Tawshif">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Last name</label>
+            <input type="text" class="form-input" placeholder="Rahman">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Shipping address</label>
+          <input type="text" class="form-input" placeholder="Street address (autocomplete-ready)">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">City</label>
+            <input type="text" class="form-input" placeholder="Dhaka">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Postal code</label>
+            <input type="text" class="form-input" placeholder="1230">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone (for delivery updates)</label>
+          <input type="tel" class="form-input" placeholder="+880 1xxx xxxxxx">
+          <span class="form-hint">Optional — but helps with delivery</span>
+        </div>
+
+        <!-- Delivery Options -->
+        <div style="margin-top:var(--sp-5)">
+          <div style="font-size:.92rem;font-weight:700;margin-bottom:var(--sp-3)">Delivery method</div>
+          <div style="border:1.5px solid var(--brand-primary);border-radius:var(--r-md);padding:var(--sp-4);display:flex;align-items:center;gap:var(--sp-4);margin-bottom:var(--sp-3);background:rgba(13,27,42,.03)">
+            <input type="radio" name="shipping" checked style="accent-color:var(--brand-primary)">
+            <div style="flex:1"><div style="font-weight:600;font-size:.9rem">Standard Shipping</div><div style="font-size:.8rem;color:var(--color-text-3)">Arrives Dec 12–16</div></div>
+            <span style="font-weight:700;font-family:var(--font-mono)">Free</span>
+          </div>
+          <div style="border:1.5px solid var(--color-border);border-radius:var(--r-md);padding:var(--sp-4);display:flex;align-items:center;gap:var(--sp-4)">
+            <input type="radio" name="shipping" style="accent-color:var(--brand-primary)">
+            <div style="flex:1"><div style="font-weight:600;font-size:.9rem">Express 2-Day</div><div style="font-size:.8rem;color:var(--color-text-3)">Arrives Dec 11</div></div>
+            <span style="font-weight:700;font-family:var(--font-mono)">$12.00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment -->
+      <div class="checkout-step">
+        <div class="checkout-step__header">
+          <div class="step-num">2</div>
+          <div class="checkout-step__title">Payment</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Card number</label>
+          <input type="text" class="form-input" placeholder="1234 5678 9012 3456">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Expiry</label>
+            <input type="text" class="form-input" placeholder="MM / YY">
+          </div>
+          <div class="form-group">
+            <label class="form-label">CVC</label>
+            <input type="text" class="form-input" placeholder="123">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Name on card</label>
+          <input type="text" class="form-input" placeholder="T. Rahman">
+        </div>
+        <button class="btn btn--primary btn--full btn--lg" style="margin-top:var(--sp-4)" onclick="toast('Order placed! Confirmation email sent.','success')">🔒 Place Order · $79.00</button>
+        <p class="cart-note" style="margin-top:var(--sp-3)">🔒 Secured with 256-bit SSL encryption. We never store your card details.</p>
+      </div>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+      <div class="order-summary__title">Order Summary</div>
+      <div class="order-summary__item">
+        <div class="order-summary__img">👗<span class="order-summary__qty">1</span></div>
+        <div style="flex:1"><div class="order-summary__name">Linen Midi Wrap Dress</div><div class="order-summary__variant">Natural White · M</div></div>
+        <div class="order-summary__price">$79</div>
+      </div>
+      <div class="order-summary__item">
+        <div class="order-summary__img">👟<span class="order-summary__qty">2</span></div>
+        <div style="flex:1"><div class="order-summary__name">Cloud Walk Sneaker</div><div class="order-summary__variant">Chalk White · Size 38</div></div>
+        <div class="order-summary__price">$270</div>
+      </div>
+
+      <div class="cart-promo" style="margin-top:var(--sp-4)">
+        <input type="text" placeholder="Promo code">
+        <button class="btn btn--outline btn--sm">Apply</button>
+      </div>
+
+      <div class="order-summary__line"><span>Subtotal</span><span class="price">$349.00</span></div>
+      <div class="order-summary__line"><span>Shipping</span><span class="price" style="color:var(--color-success)">Free</span></div>
+      <div class="order-summary__line"><span>Tax (VAT 15%)</span><span class="price">$52.35</span></div>
+      <div class="order-summary__line total"><span>Total</span><span class="price">$401.35</span></div>
+      <div style="display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-4);justify-content:center">
+        <div class="payment-icon">VISA</div>
+        <div class="payment-icon">MC</div>
+        <div class="payment-icon">AMEX</div>
+        <div class="payment-icon">PayPal</div>
+        <div class="payment-icon">Apple Pay</div>
+      </div>
+    </div>
+  </div>
+</div></section>
+{{/base}}

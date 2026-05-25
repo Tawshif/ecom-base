@@ -1,0 +1,17 @@
+[
+  { "id": "women", "name": "Women", "slug": "women", "icon": "👗", "count": 1204, "children": [
+    { "id": "women-dresses", "name": "Dresses", "slug": "women/dresses", "count": 342 },
+    { "id": "women-tops", "name": "Tops", "slug": "women/tops", "count": 289 },
+    { "id": "women-bottoms", "name": "Bottoms", "slug": "women/bottoms", "count": 198 },
+    { "id": "women-outerwear", "name": "Outerwear", "slug": "women/outerwear", "count": 156 }
+  ]},
+  { "id": "men", "name": "Men", "slug": "men", "icon": "👔", "count": 896, "children": [
+    { "id": "men-shirts", "name": "Shirts", "slug": "men/shirts", "count": 234 },
+    { "id": "men-pants", "name": "Pants", "slug": "men/pants", "count": 187 },
+    { "id": "men-outerwear", "name": "Outerwear", "slug": "men/outerwear", "count": 143 }
+  ]},
+  { "id": "footwear", "name": "Footwear", "slug": "footwear", "icon": "👟", "count": 432, "children": [] },
+  { "id": "home", "name": "Home", "slug": "home", "icon": "🏠", "count": 678, "children": [] },
+  { "id": "beauty", "name": "Beauty", "slug": "beauty", "icon": "💄", "count": 345, "children": [] },
+  { "id": "accessories", "name": "Accessories", "slug": "accessories", "icon": "🎒", "count": 512, "children": [] }
+]

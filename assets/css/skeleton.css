@@ -1,0 +1,53 @@
+/* ============================================================
+   SKELETON LOADERS
+   ============================================================ */
+
+@keyframes shimmer {
+    0% {
+        background-position: -600px 0;
+    }
+
+    100% {
+        background-position: 600px 0;
+    }
+}
+
+.skeleton {
+    background: linear-gradient(90deg, var(--color-surface-2) 25%, #ebebeb 50%, var(--color-surface-2) 75%);
+    background-size: 600px 100%;
+    animation: shimmer 1.5s infinite linear;
+    border-radius: var(--r-sm);
+}
+
+.skeleton-card {
+    background: var(--color-surface);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+}
+
+.skeleton-img {
+    aspect-ratio: 4/5;
+}
+
+.skeleton-body {
+    padding: var(--sp-4);
+}
+
+.skeleton-line {
+    height: 12px;
+    margin-bottom: var(--sp-2);
+    border-radius: var(--r-pill);
+}
+
+.skeleton-line--sm {
+    width: 40%;
+}
+
+.skeleton-line--md {
+    width: 65%;
+}
+
+.skeleton-line--full {
+    width: 100%;
+}

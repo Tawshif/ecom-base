@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
+  <g fill="#000000" transform="translate(10, 9) scale(0.9)">
+    <path d="M10 5 C15 5, 20 10, 20 18 C20 28, 12 34, 5 36 C8 32, 10 25, 10 18 Z"/>
+    <path d="M11 7 L4 32 M13 9 L6 33 M15 11 L8 34 M17 14 L10 35" stroke="#000000" stroke-width="1.2"/>
+    <path d="M1 3 C5 3, 9 6, 10 10 C8 8, 4 6, 1 6 Z"/>
+  </g>
+  <text x="38" y="32" font-family="'Arial Black', 'Impact', sans-serif" font-size="15" font-weight="900" letter-spacing="0.5" fill="#000000">RYANAIR</text>
+</svg>

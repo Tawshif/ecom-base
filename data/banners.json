@@ -1,0 +1,5 @@
+[
+  { "id": "promo_bar", "type": "promo-bar", "text": "🚚 Free shipping on orders over $50", "link": { "label": "Shop Now", "href": "/pages/catalog/category.html" }, "active": true },
+  { "id": "hero_main", "type": "hero", "eyebrow": "✦ New Collection 2026", "title": "Designed for <em>Real Life</em>", "subtitle": "Premium products crafted for modern living.", "cta": { "label": "Shop Collection", "href": "/pages/catalog/category.html" }, "image": "/hero/hero-main.jpg", "active": true },
+  { "id": "mid_promo", "type": "promotional", "title": "Summer Essentials", "subtitle": "Up to 40% off", "cta": { "label": "Shop Sale", "href": "/pages/catalog/category.html?cat=sale" }, "image": "/banners/summer-sale.jpg", "active": true }
+]

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50">
+  <style>
+    .gog-small {
+      font-family: 'Cinzel', 'Georgia', serif;
+      font-size: 8px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      fill: #000000;
+    }
+    .gog-large {
+      font-family: 'Cinzel', 'Georgia', serif;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: 2.5px;
+      fill: #000000;
+    }
+  </style>
+  <text x="50%" y="19" text-anchor="middle" class="gog-small">GUILD OF</text>
+  <text x="50%" y="37" text-anchor="middle" class="gog-large">GUARDIANS</text>
+</svg>

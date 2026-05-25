@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
+  <g fill="none" stroke="#000000" stroke-width="2.5" transform="translate(15, 8)">
+    <path d="M 12 17 C 12 8, 25 8, 25 17 C 25 25, 7 22, 7 15 C 7 6, 29 5, 29 17 C 29 30, 2 27, 2 15 C 2 4, 32 1, 32 17" />
+  </g>
+  <text x="62" y="31" font-family="'Arial Black', 'Impact', sans-serif" font-size="15" font-weight="900" letter-spacing="1.5" fill="#000000">UBISOFT</text>
+</svg>

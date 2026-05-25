@@ -1,0 +1,112 @@
+/* ============================================================
+   TYPOGRAPHY — Commercia Retail Theme
+   Single font: Outfit with variable weights
+   ============================================================ */
+
+body {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-text);
+    margin: 0;
+}
+
+h1 { font-size: 2.5rem; }     /* 40px */
+h2 { font-size: 2.25rem; }    /* 36px */
+h3 { font-size: 1.5rem; }     /* 24px */
+h4 { font-size: 1.25rem; }    /* 20px */
+h5 { font-size: 1rem; }       /* 16px */
+h6 { font-size: 0.875rem; }   /* 14px */
+
+p {
+    color: var(--color-text-2);
+    margin: 0;
+    line-height: 1.65;
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color var(--ease-fast);
+}
+
+a:hover {
+    color: var(--brand-accent);
+}
+
+small {
+    font-size: 0.75rem;
+    color: var(--color-text-3);
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.section-subtitle {
+    font-size: 0.875rem;
+    color: var(--color-text-2);
+    margin-top: var(--sp-3);
+}
+
+.eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-3);
+}
+
+/* Star ratings */
+.stars {
+    color: var(--brand-accent-2);
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+}
+
+.rating-count {
+    font-size: 0.8rem;
+    color: var(--color-text-3);
+    margin-left: var(--sp-1);
+}
+
+/* Price typography */
+.price-main {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.price-sale {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-error);
+}
+
+.price-original {
+    font-size: 0.875rem;
+    color: var(--color-text-3);
+    text-decoration: line-through;
+    margin-left: var(--sp-2);
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.625rem; }
+    h3 { font-size: 1.125rem; }
+
+    .section-title { font-size: 1.125rem; }
+}

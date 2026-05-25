@@ -1,0 +1,112 @@
+/* ============================================================
+   FOOTER — Commercia Retail Style
+   ============================================================ */
+
+.footer {
+    margin-top: var(--sp-10);
+    background: var(--color-surface-2);
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 128px;
+    padding: 40px 0 64px;
+}
+
+.footer__logo {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-text);
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.footer__logo span {
+    color: var(--brand-accent);
+}
+
+.footer__columns {
+    display: flex;
+    gap: 96px;
+}
+
+.footer__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer__links a {
+    font-size: 14px;
+    color: var(--color-text-2);
+    text-decoration: none;
+    position: relative;
+    transition: color var(--ease-fast);
+}
+
+.footer__links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--color-text-2);
+    transition: width var(--ease);
+}
+
+.footer__links a:hover {
+    color: var(--color-text);
+}
+
+.footer__links a:hover::after {
+    width: 100%;
+}
+
+/* Bottom bar */
+.footer__bottom {
+    border-top: 1px solid var(--color-border);
+    padding: 20px 0;
+}
+
+.footer__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright {
+    font-size: 13px;
+    color: var(--color-text-3);
+}
+
+.footer__social {
+    display: flex;
+    gap: 24px;
+}
+
+.footer__social a {
+    font-size: 13px;
+    color: var(--color-text-3);
+    text-decoration: none;
+    transition: color var(--ease-fast);
+}
+
+.footer__social a:hover {
+    color: var(--color-text);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer__inner { gap: 48px; }
+    .footer__columns { gap: 48px; }
+}
+
+@media (max-width: 768px) {
+    .footer { display: none; }
+}

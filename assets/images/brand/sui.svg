@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
+  <g fill="#000000" transform="translate(15, 0)">
+    <path d="M 25,10 C 25,10 39,24 39,32 C 39,39 33,43 25,43 C 17,43 11,39 11,32 C 11,24 25,10 25,10 Z" />
+    <path d="M 25,10 C 25,10 28,24 20,32 C 15,37 17,43 25,43 C 26,43 25,10 25,10 Z" fill="#ffffff" opacity="0.3" />
+  </g>
+  <text x="62" y="32" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="900" fill="#000000">Sui</text>
+</svg>

@@ -1,0 +1,80 @@
+/* ============================================================
+   DESIGN TOKENS — Commercia Retail Theme
+   Inspired by Bagisto Commercia Retail
+   ============================================================ */
+
+:root {
+    /* Brand Colors */
+    --brand-primary: #1E293B;
+    --brand-accent: #F97316;
+    --brand-accent-2: #F59E0B;
+    --brand-light: #F6F6F6;
+
+    /* Semantic Palette */
+    --color-bg: #FFFFFF;
+    --color-surface: #FFFFFF;
+    --color-surface-2: #F8FAFC;
+    --color-surface-3: #F6F6F6;
+    --color-text: #1E293B;
+    --color-text-2: #64748B;
+    --color-text-3: #94A3B8;
+    --color-border: #E2E8F0;
+    --color-border-strong: #CBD5E1;
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444;
+
+    /* Label Colors (promo badges) */
+    --label-bg: #FFF1EA;
+    --label-text: #7E391F;
+    --label-bg-alt: #713F12;
+    --label-text-alt: #FFFFFF;
+
+    /* Typography */
+    --font-display: 'Outfit', system-ui, sans-serif;
+    --font-body: 'Outfit', system-ui, sans-serif;
+    --font-mono: 'DM Mono', monospace;
+
+    /* Spacing (8pt grid) */
+    --sp-1: 4px;
+    --sp-2: 8px;
+    --sp-3: 12px;
+    --sp-4: 16px;
+    --sp-5: 24px;
+    --sp-6: 32px;
+    --sp-7: 48px;
+    --sp-8: 64px;
+    --sp-9: 96px;
+    --sp-10: 128px;
+
+    /* Section Spacing */
+    --section-gap: 64px;
+    --section-gap-mobile: 32px;
+
+    /* Radii */
+    --r-sm: 4px;
+    --r-md: 8px;
+    --r-lg: 12px;
+    --r-xl: 16px;
+    --r-pill: 999px;
+
+    /* Shadows (minimal — Commercia style) */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, .07);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, .08);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, .1);
+    --shadow-mobile-bar: 0px -1px 20px 0px rgba(0, 0, 0, 0.12);
+
+    /* Transitions */
+    --ease: 300ms ease;
+    --ease-fast: 150ms ease;
+    --ease-slow: 400ms ease;
+
+    /* Layout */
+    --max-w: 1320px;
+    --header-h: auto;
+
+    /* Product Card */
+    --card-max-w: 214px;
+    --card-aspect: 0.9554 / 1;
+}

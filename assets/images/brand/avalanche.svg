@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50">
+  <g transform="translate(10, 0)">
+    <circle cx="26" cy="25" r="16" fill="#000000" />
+    <path d="M 26,14 L 35,31 L 17,31 Z" fill="#ffffff" />
+    <path d="M 26,20 L 31,29 L 21,29 Z" fill="#000000" />
+  </g>
+  <text x="62" y="31" font-family="'Arial Black', 'Impact', sans-serif" font-size="13" font-weight="900" letter-spacing="1.5" fill="#000000">AVALANCHE</text>
+</svg>

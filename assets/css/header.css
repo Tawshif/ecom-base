@@ -1,0 +1,169 @@
+/* ============================================================
+   HEADER — Commercia Retail Style
+   ============================================================ */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+}
+
+/* Row 1 */
+.header__top {
+    padding: 12px 0;
+}
+
+.header__top-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.header__logo {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-text);
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.header__logo span {
+    color: var(--brand-accent);
+}
+
+/* Search bar */
+.header__search {
+    flex: 1;
+    max-width: 640px;
+    position: relative;
+}
+
+.header__search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.875rem;
+    pointer-events: none;
+}
+
+.header__search input {
+    width: 100%;
+    padding: 10px 16px 10px 36px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--r-md);
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-text);
+    outline: none;
+    transition: border-color var(--ease);
+    background: transparent;
+}
+
+.header__search input:hover,
+.header__search input:focus {
+    border-color: var(--color-text-2);
+}
+
+/* Action buttons */
+.header__actions {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.header__action-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: var(--r-md);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--color-text);
+    transition: background var(--ease);
+    position: relative;
+}
+
+.header__action-btn:hover {
+    background: var(--color-surface-2);
+}
+
+.header__action-icon {
+    font-size: 1.25rem;
+}
+
+.header__action-label {
+    font-weight: 500;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    min-width: 18px;
+    height: 18px;
+    background: var(--brand-accent);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+/* Row 2 — Category nav */
+.header__nav-bar {
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.header__nav {
+    display: flex;
+    gap: 32px;
+    padding: 10px 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.header__nav::-webkit-scrollbar {
+    display: none;
+}
+
+.header__nav-link {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-2);
+    white-space: nowrap;
+    text-decoration: none;
+    transition: color var(--ease-fast);
+    position: relative;
+}
+
+.header__nav-link:hover {
+    color: var(--color-text);
+}
+
+.header__nav-link--all {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .header__nav-bar { display: none; }
+    .header__action-label { display: none; }
+}
+
+@media (max-width: 768px) {
+    .header__search { max-width: 100%; }
+    .header__top-inner { flex-wrap: wrap; gap: 12px; }
+}
