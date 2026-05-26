@@ -1,0 +1,69 @@
+{{#> base title="Search Results" }}
+<section class="section">
+  <div class="container">
+    <div class="section-label">PAGE · search-results</div>
+    <div class="breadcrumb"><a href="/">Home</a><span>/</span><span class="breadcrumb__current">Search Results</span></div>
+    
+    <!-- Search Header -->
+    <div style="text-align: center; margin-bottom: var(--sp-10); padding: var(--sp-8) 0; background: var(--color-surface); border-radius: var(--r-xl);">
+      <h1 class="section-title" style="margin-bottom: var(--sp-3);">Search results for "MX"</h1>
+      <p class="section-subtitle" style="margin-bottom: var(--sp-6);">We found 4 results matching your query.</p>
+      
+      <!-- In-page search bar -->
+      <div style="max-width: 500px; margin: 0 auto; display: flex; gap: var(--sp-2);">
+        <input type="text" value="MX" style="flex: 1; height: 48px; border-radius: var(--r-pill); border: 1.5px solid var(--color-border); padding: 0 var(--sp-5); font-size: 1rem; outline: none; background: #fff;">
+        <button class="btn btn--primary" style="height: 48px; border-radius: var(--r-pill); padding: 0 var(--sp-5);">Search</button>
+      </div>
+    </div>
+
+    <div class="plp-layout">
+      <!-- Filter Panel -->
+      <aside class="filter-panel">
+        <div class="filter-panel__title">Filters <button class="filter-panel__clear">Clear all</button></div>
+        
+        <div class="filter-group">
+          <div class="filter-group__label">Category <span>▾</span></div>
+          <div class="filter-option"><input type="checkbox" id="c1"><label for="c1">Mice</label><span class="count">2</span></div>
+          <div class="filter-option"><input type="checkbox" id="c2" checked><label for="c2">Keyboards</label><span class="count">2</span></div>
+          <div class="filter-option"><input type="checkbox" id="c3"><label for="c3">Accessories</label><span class="count">0</span></div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-group__label">Price Range <span>▾</span></div>
+          <div class="filter-option"><input type="checkbox" id="p1"><label for="p1">Under $50</label></div>
+          <div class="filter-option"><input type="checkbox" id="p2"><label for="p2">$50 - $100</label></div>
+          <div class="filter-option"><input type="checkbox" id="p3" checked><label for="p3">Over $100</label></div>
+        </div>
+        
+        <button class="btn btn--primary btn--full" style="margin-top:var(--sp-4)">Apply Filters</button>
+      </aside>
+
+      <!-- Main Results Grid -->
+      <div>
+        <div class="plp-toolbar">
+          <span class="plp-count">Showing <strong>4</strong> results</span>
+          <div class="plp-sort">
+            <select class="sort-select">
+              <option>Sort: Relevance</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest Arrivals</option>
+            </select>
+            <div class="view-toggles">
+              <button class="view-btn active">⊞</button>
+              <button class="view-btn">☰</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          {{> ui/product-card icon="🖱️" title="MX Master 3S" badge="Best Seller" badgeType="best-seller" price="99.99" }}
+          {{> ui/product-card icon="⌨️" title="MX Keys S" badge="New" badgeType="new" price="109.99" }}
+          {{> ui/product-card icon="🖱️" title="MX Anywhere 3S" price="79.99" }}
+          {{> ui/product-card icon="⌨️" title="MX Mechanical Mini" price="149.99" }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{/base}}

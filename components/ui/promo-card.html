@@ -1,0 +1,17 @@
+<div class="promo-card {{#if image}}promo-card--image{{else}}promo-card--solid{{/if}}" 
+     {{#if bgColor}}style="background-color: {{bgColor}};"{{/if}}>
+  
+  {{#if image}}
+    <img src="{{image}}" alt="{{title}}" class="promo-card__bg-image" loading="lazy">
+    <div class="promo-card__overlay">
+      <h3 class="promo-card__title">{{title}}</h3>
+      {{#if linkText}}
+        <a href="{{linkUrl}}" class="promo-card__link">{{linkText}}</a>
+      {{/if}}
+    </div>
+  {{else}}
+    <div class="promo-card__content">
+      {{> @partial-block }}
+    </div>
+  {{/if}}
+</div>

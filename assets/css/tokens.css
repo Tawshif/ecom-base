@@ -71,10 +71,9 @@
     --ease-slow: 400ms ease;
 
     /* Layout */
-    --max-w: 1320px;
+    --max-w: 1520px;
     --header-h: auto;
 
     /* Product Card */
-    --card-max-w: 214px;
-    --card-aspect: 0.9554 / 1;
+    --card-aspect: 1 / 1;
 }

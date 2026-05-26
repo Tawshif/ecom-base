@@ -1,0 +1,26 @@
+{{#> base title="Verify Email" }}
+<section class="auth-layout">
+  <div class="auth-card">
+    <h1 class="auth-card__title">Check your email</h1>
+    <p class="auth-card__subtitle">We've sent a 6-digit verification code to your email.</p>
+    
+    <div class="form-group">
+      <label class="form-label" style="text-align: center;">Enter 6-digit code</label>
+      <div style="display: flex; gap: var(--sp-2); justify-content: center;">
+        <input type="text" class="form-input" style="width: 48px; text-align: center; font-size: 1.2rem; padding: 0;" maxlength="1">
+        <input type="text" class="form-input" style="width: 48px; text-align: center; font-size: 1.2rem; padding: 0;" maxlength="1">
+        <input type="text" class="form-input" style="width: 48px; text-align: center; font-size: 1.2rem; padding: 0;" maxlength="1">
+        <input type="text" class="form-input" style="width: 48px; text-align: center; font-size: 1.2rem; padding: 0;" maxlength="1">
+        <input type="text" class="form-input" style="width: 48px; text-align: center; font-size: 1.2rem; padding: 0;" maxlength="1">
+        <input type="text" class="form-input" style="width: 48px; text-align: center; font-size: 1.2rem; padding: 0;" maxlength="1">
+      </div>
+    </div>
+    
+    <button class="btn btn--primary btn--full btn--lg" style="margin-top: var(--sp-4);" onclick="window.location.href='/pages/account/dashboard.html'">Verify Account</button>
+    
+    <div class="auth-footer">
+      Didn't receive the code? <a href="#">Resend Code</a>
+    </div>
+  </div>
+</section>
+{{/base}}

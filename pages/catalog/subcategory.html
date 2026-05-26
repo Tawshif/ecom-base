@@ -1,0 +1,80 @@
+{{#> base title="Master Series - Mice" }}
+<section class="section">
+  <div class="container">
+    <div class="section-label">PAGE · subcategory</div>
+    <div class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/pages/catalog/category.html">Mice & Keyboards</a><span>/</span><a href="#">Mice</a><span>/</span><span class="breadcrumb__current">Master Series</span></div>
+
+    <!-- Subcategory Hero Banner -->
+    <div style="width: 100%; min-height: 240px; background: #000; border-radius: var(--r-xl); overflow: hidden; position: relative; margin-bottom: var(--sp-10); display: flex; align-items: center; padding: var(--sp-10);">
+      <!-- Abstract Background Graphic / Image -->
+      <div style="position: absolute; right: 0; top: 0; bottom: 0; width: 50%; background: linear-gradient(90deg, #000 0%, transparent 100%), url('https://picsum.photos/id/48/800/400') center/cover; opacity: 0.6; z-index: 0;"></div>
+      
+      <div style="position: relative; z-index: 1; max-width: 600px; color: #fff;">
+        <h1 style="font-family: var(--font-display); font-size: 3rem; margin-bottom: var(--sp-3); font-weight: 400;">Master Series</h1>
+        <p style="font-size: 1.1rem; color: rgba(255,255,255,0.8); line-height: 1.5; margin-bottom: var(--sp-6);">Advanced productivity mice designed for creatives and coders. Experience ultimate precision and comfort.</p>
+        <button class="btn" style="background: #00E6C3; color: #000; font-weight: 700; border: none; padding: 0 var(--sp-6); height: 44px; border-radius: var(--r-pill);">Explore the collection</button>
+      </div>
+    </div>
+
+    <div class="plp-layout">
+      <!-- Filter Panel -->
+      <aside class="filter-panel">
+        <div class="filter-panel__title">Filters <button class="filter-panel__clear">Clear all</button></div>
+        
+        <div class="filter-group">
+          <div class="filter-group__label">Color <span>▾</span></div>
+          <div class="filter-option"><input type="checkbox" id="co1"><label for="co1">Graphite</label></div>
+          <div class="filter-option"><input type="checkbox" id="co2"><label for="co2">Pale Gray</label></div>
+          <div class="filter-option"><input type="checkbox" id="co3"><label for="co3">Rose</label></div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-group__label">Compatibility <span>▾</span></div>
+          <div class="filter-option"><input type="checkbox" id="cmp1"><label for="cmp1">Windows</label></div>
+          <div class="filter-option"><input type="checkbox" id="cmp2"><label for="cmp2">macOS</label></div>
+          <div class="filter-option"><input type="checkbox" id="cmp3"><label for="cmp3">iPadOS</label></div>
+        </div>
+        
+        <button class="btn btn--primary btn--full" style="margin-top:var(--sp-4)">Apply Filters</button>
+      </aside>
+
+      <!-- Main Results Grid -->
+      <div>
+        <div class="plp-toolbar">
+          <span class="plp-count">Showing <strong>6</strong> results</span>
+          <div class="plp-sort">
+            <select class="sort-select">
+              <option>Sort: Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+            </select>
+            <div class="view-toggles">
+              <button class="view-btn active">⊞</button>
+              <button class="view-btn">☰</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          {{> ui/product-card icon="🖱️" title="MX Master 3S" badge="Best Seller" badgeType="best-seller" price="99.99" }}
+          {{> ui/product-card icon="🖱️" title="MX Master 3S for Mac" price="99.99" }}
+          {{> ui/product-card icon="🖱️" title="MX Anywhere 3S" price="79.99" }}
+          {{> ui/product-card icon="🖱️" title="MX Anywhere 3S for Mac" badge="New" badgeType="new" price="79.99" }}
+          {{> ui/product-card icon="🖱️" title="MX Ergo" price="99.99" }}
+          {{> ui/product-card icon="🖱️" title="MX Vertical" badge="Sale" badgeType="sale" priceSale="89.99" priceOriginal="99.99" discount="$10 off" }}
+        </div>
+        
+        <!-- Pagination -->
+        <div class="flex-center" style="margin-top:var(--sp-8)">
+          <div style="display: flex; gap: var(--sp-2);">
+            <button class="btn btn--outline" style="width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center;" disabled>‹</button>
+            <button class="btn btn--primary" style="width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center;">1</button>
+            <button class="btn btn--outline" style="width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center;">2</button>
+            <button class="btn btn--outline" style="width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center;">›</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{/base}}

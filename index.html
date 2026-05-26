@@ -133,12 +133,46 @@
   </div>
   <p class="products-section__subtitle">Discover Fresh Deals on Everyday Essentials!</p>
   <div class="product-grid-6">
-    {{> ui/product-card icon="🥑" title="Organic Avocados (Pack of 4)" ratingCount="145" priceSale="4.99" priceOriginal="7.99" }}
-    {{> ui/product-card icon="🍗" title="Free Range Chicken Breast 500g" ratingCount="312" price="8.49" }}
-    {{> ui/product-card icon="🧀" title="Aged Cheddar Cheese Block 250g" ratingCount="89" price="5.99" }}
-    {{> ui/product-card icon="🍊" title="Valencia Oranges 1kg Bag" ratingCount="203" priceSale="3.49" priceOriginal="5.99" }}
-    {{> ui/product-card icon="🥩" title="Grass-Fed Beef Mince 500g" ratingCount="167" price="9.99" }}
-    {{> ui/product-card icon="🍇" title="Seedless Red Grapes 500g" ratingCount="94" price="4.29" }}
+        {{> ui/product-card 
+            icon="📱" 
+            badge="Sale" 
+            badgeType="sale" 
+            badge2="Refurbished" 
+            badge2Type="refurbished"
+            title="Refurbished Folio Touch for iPad Air" 
+            subtitle="Logitech Certified Refurbished. Excellent condition." 
+            priceSale="119.99" 
+            priceOriginal="199.99" 
+            discount="$80.00 off" 
+        }}
+        {{> ui/product-card 
+            icon="⌨️" 
+            title="Keys-To-Go 2 Ultra-portable keyboard" 
+            subtitle="Ultra-portable keyboard with cover" 
+            swatch1="#424242" 
+            swatch2="#F5F5F5" 
+            swatch3="#9E9E9E"
+            promoTag="Bundle & Save"
+            promoIcon="🏷️"
+            price="79.99"
+        }}
+        {{> ui/product-card icon="🧀" title="Aged Cheddar Cheese Block 250g" ratingCount="89" price="5.99" }}
+        
+        {{#> ui/promo-card bgColor="#311b92" }}
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/><path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+            <p>Free shipping on orders over<br>$29.00.</p>
+            <hr>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            <p>Easy returns and 30-day money<br>back guarantee. <a href="#">Learn more</a></p>
+            <hr>
+            <h4 style="margin: 0; font-size: 18px;">Klarna.</h4>
+            <p style="font-size: 11px;">Buy now, pay later with payment<br>options services like Klarna. <a href="#">Learn More</a></p>
+        {{/ui/promo-card}}
+
+        {{> ui/product-card icon="🍊" title="Valencia Oranges 1kg Bag" ratingCount="203" priceSale="3.49" priceOriginal="5.99" }}
+        {{> ui/product-card icon="🥩" title="Grass-Fed Beef Mince 500g" ratingCount="167" price="9.99" }}
+        
+        {{> ui/promo-card image="/hero/grocery_1.png" title="Roam free with portable tools" linkText="LEARN MORE" linkUrl="#" }}
     {{> ui/product-card icon="🥚" title="Farm Fresh Free Range Eggs 12pk" ratingCount="445" priceSale="4.99" priceOriginal="6.49" }}
     {{> ui/product-card icon="🫒" title="Extra Virgin Olive Oil 500ml" ratingCount="278" price="11.99" }}
     {{> ui/product-card icon="🥦" title="Organic Broccoli Fresh Bunch" ratingCount="156" price="2.99" }}
@@ -152,16 +186,16 @@
 <section class="section-gap container">
   <div class="promo-mosaic">
     <div class="promo-mosaic__side">
-      <div class="promo-card" style="min-height: 400px; flex:1;">
-        <img src="/banners/promo_1.png" alt="Promo 1" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;" />
+      <div class="promo-card">
+        <img src="/banners/promo_1.png" alt="Promo 1" />
         <div class="promo-card__overlay"></div>
         <div class="promo-card__content">
           <div class="promo-card__label">Super Saver Offer</div>
           <p class="promo-card__title">Taste the goodness of nature's bounty today!</p>
         </div>
       </div>
-      <div class="promo-card" style="min-height: 400px; flex:1;">
-        <img src="/banners/promo_2.png" alt="Promo 2" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;" />
+      <div class="promo-card">
+        <img src="/banners/promo_2.png" alt="Promo 2" />
         <div class="promo-card__overlay"></div>
         <div class="promo-card__content">
           <div class="promo-card__label">Super Saver Offer</div>
@@ -169,17 +203,17 @@
         </div>
       </div>
     </div>
-    <div class="promo-mosaic__stack" style="flex:1;">
-      <div class="promo-card" style="flex:1; min-height: 190px;">
-        <img src="/banners/promo_3.png" alt="Promo 3" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;" />
+    <div class="promo-mosaic__stack">
+      <div class="promo-card">
+        <img src="/banners/promo_3.png" alt="Promo 3" />
         <div class="promo-card__overlay"></div>
         <div class="promo-card__content">
           <div class="promo-card__label">Super Saver Offer</div>
           <p class="promo-card__title promo-card__title--sm">Premium dairy at unbeatable prices!</p>
         </div>
       </div>
-      <div class="promo-card" style="flex:1; min-height: 190px;">
-        <img src="/banners/promo_4.png" alt="Promo 4" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;" />
+      <div class="promo-card">
+        <img src="/banners/promo_4.png" alt="Promo 4" />
         <div class="promo-card__overlay"></div>
         <div class="promo-card__content">
           <div class="promo-card__label">Super Saver Offer</div>
@@ -202,7 +236,7 @@
     </div>
     <div class="featured-carousel__body">
       <div class="featured-carousel__image">
-        <img src="/banners/sweet_tooth.png" alt="Sweet Tooth" style="width:320px;height:482px;object-fit:cover;" />
+        <img src="/banners/sweet_tooth.png" alt="Sweet Tooth" />
       </div>
       <div class="featured-carousel__products">
         {{> ui/product-card icon="🍫" title="Belgian Dark Chocolate Bar 100g" ratingCount="234" price="3.99" }}
@@ -228,7 +262,7 @@
     </div>
     <div class="featured-carousel__body">
       <div class="featured-carousel__image">
-        <img src="/banners/cold_drinks.png" alt="Cold Drinks & Juices" style="width:320px;height:482px;object-fit:cover;" />
+        <img src="/banners/cold_drinks.png" alt="Cold Drinks & Juices" />
       </div>
       <div class="featured-carousel__products">
         {{> ui/product-card icon="🥤" title="Fresh Orange Juice 1L Bottle" ratingCount="445" price="4.49" }}
@@ -309,8 +343,8 @@
 <!-- SECTION 11: Dual Promotional Banners -->
 <section class="section-gap container">
   <div class="dual-promo">
-    <div class="dual-promo__card" style="min-height:350px;">
-      <img src="/banners/dual_promo_1.png" alt="Promo 1" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;" />
+    <div class="dual-promo__card">
+      <img src="/banners/dual_promo_1.png" alt="Promo 1" />
       <div class="promo-card__overlay"></div>
       <div class="dual-promo__content">
         <div class="dual-promo__label">Super Saver Offer</div>
@@ -318,8 +352,8 @@
         <p class="dual-promo__link">Shop Now <span>→</span></p>
       </div>
     </div>
-    <div class="dual-promo__card" style="min-height:350px;">
-      <img src="/banners/dual_promo_2.png" alt="Promo 2" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;" />
+    <div class="dual-promo__card">
+      <img src="/banners/dual_promo_2.png" alt="Promo 2" />
       <div class="promo-card__overlay"></div>
       <div class="dual-promo__content">
         <div class="dual-promo__label">Super Saver Offer</div>

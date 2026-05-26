@@ -27,6 +27,10 @@
 @import './product-card.css';
 @import './filter-panel.css';
 @import './cart-drawer.css';
+@import './cart-page.css';
+@import './auth.css';
+@import './account.css';
+@import './content.css';
 @import './reviews.css';
 @import './pdp.css';
 @import './home.css';
